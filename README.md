@@ -21,7 +21,7 @@ Visual components and Python
 Name:KANIMOZHI K N
 Ref no:212225230126
 Slot no:T1-I5
-
+```
 arr_time=float(input("Enter the mean inter arrival time of objects from feeder (in secs):")) 
 
 ser_time1=float(input("Enter the mean inter service time of lathe machine 1 (in secs):")) 
@@ -74,7 +74,7 @@ else:
     print("Warning! Objects overflow will happen in the conveyor") 
 
 print("--------------------------------------------------------------")
-
+```
 ## Output
 
 <img width="821" height="449" alt="Screenshot 2026-03-13 152107" src="https://github.com/user-attachments/assets/4e8dd1d2-1b40-4fc2-9681-b2f7f63cc57b" />
