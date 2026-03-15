@@ -23,29 +23,17 @@ Ref no:212225230126
 Slot no:T1-I5
 ```
 arr_time=float(input("Enter the mean inter arrival time of objects from feeder (in secs):")) 
-
 ser_time1=float(input("Enter the mean inter service time of lathe machine 1 (in secs):")) 
-
 ser_time2=float(input("Enter the mean inter service time of lathe machine 2 (in secs):")) 
-
 ser_time3=float(input("Enter the mean inter service time of lathe machine 3 (in secs):")) 
-
 Robot_time=float(input("Enter the Additional time taken for the robot (in secs):")) 
-
 lam=1/arr_time 
-
 mu1=1/(ser_time1+Robot_time) 
-
 mu2=1/(ser_time2+Robot_time) 
-
 mu3=1/(ser_time3+Robot_time) 
-
-print("---------------------------------------------") 
-
+print("---------------------------------------------")
 print("Series Queues with infinite capacity-Open Jackson Network") 
-
 print("----------------------------------------------") 
-
 if(lam<mu1) and (lam<mu2) and (lam<mu3): 
     Ls1=lam/(mu1-lam) 
     Ls2=lam/(mu2-lam) 
@@ -69,10 +57,8 @@ if(lam<mu1) and (lam<mu2) and (lam<mu3):
     print("Average waiting time of an object in the system S1: %0.2f secs"%Wq1) 
     print("Average waiting time of an object in the system S2: %0.2f secs"%Wq2) 
     print("Average waiting time of an object in the system S3: %0.2f secs"%Wq3) 
-
 else: 
     print("Warning! Objects overflow will happen in the conveyor") 
-
 print("--------------------------------------------------------------")
 ```
 ## Output
